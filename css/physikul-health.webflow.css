@@ -4033,8 +4033,8 @@
 }
 
 .text-block-20 {
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 500px;
 }
 
 .uui-text-size-small-4 {
@@ -4822,6 +4822,11 @@
   margin-top: 0;
   margin-bottom: 220px;
   padding-top: 20px;
+}
+
+.div-block-11 {
+  padding-top: 2rem;
+  padding-left: 60px;
 }
 
 @media screen and (min-width: 1280px) {
