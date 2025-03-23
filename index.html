@@ -379,8 +379,15 @@
               <div class="uui-space-small"></div>
               <div class="uui-text-size-large">Fill out your information to access a FREE Beginner Taster Session:</div>
               <div class="uui-cta03_form w-form">
-                <form name="Newsletter" netlify>
-                  <div class="uui-signup-form_wrapper"><input class="uui-form_input w-input" maxlength="256" name="email-4" data-name="Email 4" placeholder="Enter your email" type="email" id="email-4" required=""><input type="submit" data-wait="Please wait..." class="uui-button w-button" value="Get started"></div>
+                <form name="Newsletter" netlify-honeypot="bot-field" netlify>
+                  <div class="uui-signup-form_wrapper"><input class="uui-form_input w-input" maxlength="256" name="email-4" data-name="Email 4" placeholder="Enter your email" type="email" id="email-4" required="">
+                    <input type="submit" data-wait="Please wait..." class="uui-button w-button" value="Get started">
+                    <p class="hidden">
+                      <label>
+                        Don’t fill this out if you’re human: <input name="bot-field" />
+                      </label>
+                    </p>
+                  </div>
                   <div class="uui-text-size-small">We care about your data in our <a href="privacy-policy.html" target="_blank" class="uui-text-style-link">privacy policy</a>.</div>
                 </form>
                 <div class="w-form-done">
